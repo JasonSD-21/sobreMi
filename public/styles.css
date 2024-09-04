@@ -1,0 +1,184 @@
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #2b2d42;
+  min-height: 100vh;
+  position: fixed; /* Fija el menú */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajusta el centrado */
+  height: 100%; /* Altura completa */
+  overflow-y: auto; /* Permite scroll interno si es necesario */
+}
+
+.sidebar .nav-link {
+  color: #edf2f4;
+  font-weight: 500;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #8d99ae;
+  color: #2b2d42;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 250px; /* Espacio para el menú fijo */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Color claro para modo claro */
+  font-weight: bold;
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #6b78ff; /* Color claro para modo claro */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.btn-primary {
+  background-color: #ef233c;
+  border: none;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-primary:hover {
+  background-color: #d90429;
+}
+
+.social-icons a {
+  color: #2b2d42;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.social-icons a:hover {
+  color: #ef233c;
+}
+
+/* Estilos para las tarjetas del portafolio */
+.card {
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.btn-light {
+  color: #333; /* Color de texto por defecto */
+  border: none; /* Sin borde */
+}
+
+.btn-light i {
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+.btn-light:hover i {
+  color: #ef233c; /* Color al pasar el mouse */
+}
+
+/* Colores específicos para cada botón */
+.btn-html {
+  background-color: #e34c26; /* Color de fondo para HTML */
+  color: white;
+}
+
+.btn-css {
+  background-color: #1572b6; /* Color de fondo para CSS */
+  color: white;
+}
+
+.btn-js {
+  background-color: #f7df1e; /* Color de fondo para JavaScript */
+  color: black;
+}
+
+.btn-react {
+  background-color: #61dbfb; /* Color de fondo para React */
+  color: black;
+}
+
+.btn-bootstrap {
+  background-color: #563d7c; /* Color de fondo para Bootstrap */
+  color: white;
+}
+
+.btn-git {
+  background-color: white;
+  color: black;
+}
+
+/* Efectos de hover para botones personalizados */
+.btn-html:hover,
+.btn-css:hover,
+.btn-js:hover,
+.btn-react:hover,
+.btn-git:hover,
+.btn-bootstrap:hover {
+  opacity: 0.9; /* Efecto de opacidad al pasar el mouse */
+}
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+}
+
+.sidebar.dark-mode {
+  background-color: #1e1e2f; /* Fondo oscuro para la barra lateral */
+}
+
+.sidebar .nav-link.dark-mode {
+  color: #edf2f4; /* Texto claro en la barra lateral */
+}
+
+.sidebar .nav-link.dark-mode:hover {
+  background-color: #8d99ae; /* Color de fondo en hover */
+  color: #2b2d42; /* Texto oscuro en hover */
+}
+
+.card.dark-mode {
+  background-color: #2b2d42; /* Fondo oscuro para las tarjetas */
+}
+
+.btn-primary.dark-mode {
+  background-color: #ef233c; /* Botón primario en modo oscuro */
+}
+
+.social-icons a.dark-mode {
+  color: #ffffff; /* Íconos sociales claros */
+}
+
+/* Estilos para encabezados en modo oscuro */
+h1.dark-mode {
+  color: #ffffff; /* Color claro para h1 en modo oscuro */
+}
+
+h2.dark-mode {
+  color: #d3d3d3; /* Color más claro para h2 en modo oscuro */
+}
+
+.links {
+  margin: 5px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+.links a {
+  color: #2b2d42;
+}
+.links a:hover {
+  color: #ef233c;
+}
